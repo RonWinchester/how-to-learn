@@ -12,6 +12,7 @@
   background-color:  #f2f2f2;
   position: relative;
   display: flex;
+  align-items: center;
   }
 
 .logo {
@@ -21,22 +22,18 @@
 }
 
 .logo_place_header {
-
   z-index:2;
   left:64px;
   top:30px;
 }
 
 .header__title {
-  display: flex;
-  align-items: center;
   margin-left: 64px;
   z-index: 2;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  border: 2px solid red;
 }
 
 .header__subtitle {
@@ -46,7 +43,13 @@
   bottom:30px;
   line-height: 25px;
   font-size: 18px;
+  z-index: 2;
   font-weight:normal;
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
 }
 
 .header__main-illustration {
