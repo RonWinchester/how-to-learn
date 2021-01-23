@@ -61,7 +61,7 @@
   height: 608px;
   z-index: 1;
   background-image: url(/images/header-image.png);
-  background-size: 100% auto;
+  background-size: 765px 608px; /*возможно стоит изменить*/
   background-repeat: no-repeat;
 }
 
@@ -258,19 +258,20 @@
   top:0;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  border: 1px solid red; /* что не так с размерами*/
   }
 
 
 .footer {
   color:white;
   background-color: #1f1f1f;
-  min-height: 350px;
-
+  min-height: 250px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .logo_place_footer {
   background-image: url(/images/logo_place_footer.svg);
+  background-size: 100% auto;
   width:183px;
   height: 35px;
 }
@@ -278,6 +279,9 @@
 .footer__columns {
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  min-height: 250px;
+  margin: 0 auto;
 }
 
 .footer__column_content_copyright {
@@ -286,3 +290,40 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__column-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  color:white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.footer__social-icon {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-right: 10px;
+}
+
