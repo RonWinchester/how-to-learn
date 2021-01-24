@@ -13,6 +13,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 1;
   }
 
 .logo {
@@ -26,9 +27,12 @@
   left:64px;
   top:30px;
   background-image: url(../images/logo_place_header.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .header__title {
+  margin: 0;
   margin-left: 64px;
   z-index: 2;
   width: 730px;
@@ -54,13 +58,16 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  text-decoration: underline;
+}
+
 .header__main-illustration {
   position: absolute;
   right:0;
   bottom:0;
   width:765px;
   height: 608px;
-  z-index: 1;
   background-image: url(../images/header-image.png);
   background-size: 765px auto;
   background-repeat: no-repeat;
@@ -73,6 +80,7 @@
   background-color: #2f80ed;
   width: 568px;
   height: 568px;
+  z-index: -1;
 
 }
 
@@ -105,7 +113,7 @@
   font-weight: normal;
 }
 
-.two-columns__paragraph:nth-child(2) {
+.two-columns__paragraph:nth-child(2n) {
   margin: 30px 0;
 }
 
@@ -179,7 +187,7 @@
 .feynman {
   padding-top: 100px;
   position: relative;
-  height: 790px;
+  min-height: 790px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
@@ -216,6 +224,10 @@
   color: #2f80ed;
 }
 
+.feynman__link:hover {
+  text-decoration: underline;
+}
+
 .feynman__feynman-illustration {
   position: absolute;
   left: 0;
@@ -233,22 +245,15 @@
   padding:90px 0;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 
 .table__cell_theme_dark {
   width: 200px;
   margin: 0;
   margin-top: 80px;
-  z-index: 1;
 }
 
-.section-title_theme_dark {
-  z-index: 1;
-}
-
-.section-subtitle_theme_dark {
-  z-index: 1;
-}
 
 .kaufman__triangle {
   position: absolute;
@@ -259,13 +264,15 @@
   top:0;
   background-size: auto 100%;
   background-repeat: no-repeat;
+  z-index: -1;
   }
 
 
 .footer {
   color:white;
   background-color: #1f1f1f;
-  min-height: 250px;
+  box-sizing: border-box;
+  min-height: 350px;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -273,7 +280,7 @@
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   background-size: 100% auto;
-  width:183px;
+  width: 183px;
   height: 35px;
 }
 
